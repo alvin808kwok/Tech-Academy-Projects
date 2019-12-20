@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popup Form</title>
+    <link rel="stylesheet" type="text/css" href="./css/popup_styles.css">
+</head>
+<body>
+    <!-- Responsive Text -->
+
+    <h1 style="font-size:10vs;">Responsive Text</h1>
+
+    <p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+
+    <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the 
+        size to 10% of the viewport width.</p>
+
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport
+        is 50cm wide, 1vw is 0.5cm.
+    </p>
+
+    <!-- End - Responsive Text -->
+
+    <!-- HTML Form -->
+
+    <h2>HTML Forms</h2>
+
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()"
+        method="post">
+        First name:<br>
+        <input type="text" name="firstname" value="Enter your firstname">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Enter your lastname">
+        <br>
+        Phone:<br>
+        <input type="text" name="phone" value="Enter your phone number">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- End - HTML Form -->
+
+    <!-- Popup Form -->
+    <h2>Popup Form</h2>
+    <p>Click on the button at the bottom of this page to open the login form.</p>
+    <p>Note that the button and the form is fixed - they will always be positioned to
+        the borrom of the browser window.
+    </p>
+
+    <button class="open-button" onclick="openForm()">Open Form</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name ="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    <!-- End - Popup Form -->
+
+    <!-- @keyframes -->
+
+    <h1>The @keyframes Rule</h1>
+
+    <p><strong>Note:</strong> The @keyframes rule is not supported in Internet
+    Explorer 9 and earlier versions.</p>
+
+    <div ></div>
+
+    <!-- End - @keyframes -->
+
+    <!-- HTML Links / Bookmarks -->
+
+    <h2>HTML Links</h2>
+    <p><a href="https://www.w3schools.com/html">Visit our HTML tutorials</a></p>
+
+    <!-- End - HTML Links / Bookmarks -->
+
+    <!-- Smooth Scroll -->
+
+    <h1>Smooth Scroll</h1>
+
+    <div class="main" id="section1">
+        <h2>Section 1</h2>
+        <p>Click on the link to see the "smooth" scrolling effect.</p>
+        <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+    </div>
+
+    <div class="main" id="section2">
+        <h2>Section 2</h2>
+        <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+    </div>
+
+    <!-- End - Smooth Scroll -->
+
+    <!-- Auto Slideshow -->
+
+    <!-- <div id="slideshow">
+        <div>
+            <img src="https://www.pets4homes.co.uk/images/articles/1532/large/five-useful-things-to-know-about-the-shih-tzu-puppy-5ce28dbbd4f12.jpg">
+        </div>
+        <div>
+            <img src="https://thehappypuppysite.com/wp-content/uploads/2018/07/lhasa-apso-SC-long.jpg">
+        </div>
+        <div>
+            Pretty cool eh? This slide is proof the content can be anything
+        </div>
+    </div>
+
+    <script>
+    $("#slideshow > div:gt(0)").hide();
+
+    setInterval(function() {
+        $('#slideshow > div:first')
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#slideshow');
+    }, 3000);
+    </script> -->
+
+    <!-- End - Auto Slideshow -->
+
+    <!-- Sticky Element -->
+
+    <h2>Sticky Element: Scroll Down to See the Effect</h2>
+    <p>Scroll down this page to see how sticky positioning works.</p>
+    <div class="sticky">I will stick to the screen when reach my scroll position</div>
+    
+    <p>Some example text...</p>
+    <h2>Scroll back up again to "remove" the sticky position.</h2>
+    <p>Just last weekend I was at the beach sitting on the sand with my dog named Jay.
+        There was an endangered hawaiian monk seal lying on the beach. Jay started barking at
+        the hawaiian monk seal. The hawaiian monk seal was sleeping. We could all hear it
+        snooring. But Jay kept barking at the seal. Jay kept barking and barking. The monk seal
+        turned over and slept on his back side. Jay then rushed toward the seal continued barking
+        and started to scratch the seal. The seal then turned over once more and smash Jay into
+        the sand. Jay's whole body was under the seals monk except for his head. I rushed over to
+        save my dog. Luckily since I work out a lot, I was able to turn over the 500 pound monk
+        and rescue my dog. However, since the hawaiian monk seal is endangered, the lifeguard on
+        wrote me a ticket because me and Jay were not supposed to touch the seal. But I fought
+        the ticket off in court with my lawyer and did not have to pay a dime.
+
+        Just last weekend I was at the beach sitting on the sand with my dog named Jay.
+        There was an endangered hawaiian monk seal lying on the beach. Jay started barking at
+        the hawaiian monk seal. The hawaiian monk seal was sleeping. We could all hear it
+        snooring. But Jay kept barking at the seal. Jay kept barking and barking. The monk seal
+        turned over and slept on his back side. Jay then rushed toward the seal continued barking
+        and started to scratch the seal. The seal then turned over once more and smash Jay into
+        the sand. Jay's whole body was under the seals monk except for his head. I rushed over to
+        save my dog. Luckily since I work out a lot, I was able to turn over the 500 pound monk
+        and rescue my dog. However, since the hawaiian monk seal is endangered, the lifeguard on
+        wrote me a ticket because me and Jay were not supposed to touch the seal. But I fought
+        the ticket off in court with my lawyer and did not have to pay a dime.
+
+        Just last weekend I was at the beach sitting on the sand with my dog named Jay.
+        There was an endangered hawaiian monk seal lying on the beach. Jay started barking at
+        the hawaiian monk seal. The hawaiian monk seal was sleeping. We could all hear it
+        snooring. But Jay kept barking at the seal. Jay kept barking and barking. The monk seal
+        turned over and slept on his back side. Jay then rushed toward the seal continued barking
+        and started to scratch the seal. The seal then turned over once more and smash Jay into
+        the sand. Jay's whole body was under the seals monk except for his head. I rushed over to
+        save my dog. Luckily since I work out a lot, I was able to turn over the 500 pound monk
+        and rescue my dog. However, since the hawaiian monk seal is endangered, the lifeguard on
+        wrote me a ticket because me and Jay were not supposed to touch the seal. But I fought
+        the ticket off in court with my lawyer and did not have to pay a dime.
+
+        Just last weekend I was at the beach sitting on the sand with my dog named Jay.
+        There was an endangered hawaiian monk seal lying on the beach. Jay started barking at
+        the hawaiian monk seal. The hawaiian monk seal was sleeping. We could all hear it
+        snooring. But Jay kept barking at the seal. Jay kept barking and barking. The monk seal
+        turned over and slept on his back side. Jay then rushed toward the seal continued barking
+        and started to scratch the seal. The seal then turned over once more and smash Jay into
+        the sand. Jay's whole body was under the seals monk except for his head. I rushed over to
+        save my dog. Luckily since I work out a lot, I was able to turn over the 500 pound monk
+        and rescue my dog. However, since the hawaiian monk seal is endangered, the lifeguard on
+        wrote me a ticket because me and Jay were not supposed to touch the seal. But I fought
+        the ticket off in court with my lawyer and did not have to pay a dime.
+
+        Just last weekend I was at the beach sitting on the sand with my dog named Jay.
+        There was an endangered hawaiian monk seal lying on the beach. Jay started barking at
+        the hawaiian monk seal. The hawaiian monk seal was sleeping. We could all hear it
+        snooring. But Jay kept barking at the seal. Jay kept barking and barking. The monk seal
+        turned over and slept on his back side. Jay then rushed toward the seal continued barking
+        and started to scratch the seal. The seal then turned over once more and smash Jay into
+        the sand. Jay's whole body was under the seals monk except for his head. I rushed over to
+        save my dog. Luckily since I work out a lot, I was able to turn over the 500 pound monk
+        and rescue my dog. However, since the hawaiian monk seal is endangered, the lifeguard on
+        wrote me a ticket because me and Jay were not supposed to touch the seal. But I fought
+        the ticket off in court with my lawyer and did not have to pay a dime.
+    </p>
+
+    <script src="./js/popup.js"></script>
+    
+</body>
+</html>
